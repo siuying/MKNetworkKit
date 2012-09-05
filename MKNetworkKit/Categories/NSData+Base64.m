@@ -275,7 +275,7 @@ char *MKNewBase64Encode(
 //
 // returns the autoreleased NSData representation of the base64 string
 //
-+ (NSData *)mk_dataFromBase64String:(NSString *)aString
++ (NSData *)dataFromBase64String:(NSString *)aString
 {
 	NSData *data = [aString dataUsingEncoding:NSASCIIStringEncoding];
 	size_t outputLength;
@@ -294,7 +294,7 @@ char *MKNewBase64Encode(
 // returns an autoreleased NSString being the base 64 representation of the
 //	receiver.
 //
-- (NSString *)mk_base64EncodedString
+- (NSString *)base64EncodedString
 {
 	size_t outputLength;
 	char *outputBuffer =
